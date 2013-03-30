@@ -1,4 +1,4 @@
-name: Spigot-Test
+name: Bukkit-Test
 version: 0.1
-main: me.fish.spigot.TestPlugin
+main: me.fish.bukkit.TestPlugin
 authors: [thefish97]
