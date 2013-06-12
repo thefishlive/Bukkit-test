@@ -1,3 +1,39 @@
 name: Bukkit-test
 version: 0.1
 main: io.github.thefishlive.bukkit.BukkitTest
+
+commands:
+  player:
+    description: opens a inventory
+  chest:
+    description: opens a inventory
+  ender_chest:
+    description: opens a inventory
+  dropper:
+    description: opens a inventory
+  dispenser:
+    description: opens a inventory
+  furnace:
+    description: opens a inventory
+  workbench:
+    description: opens a inventory
+  brewing:
+    description: opens a inventory
+  enchanting:
+    description: opens a inventory
+  hopper:
+    description: opens a inventory
+  anvil:
+    description: opens a inventory
+  beacon:
+    description: opens a inventory
+  merchant:
+    description: opens a inventory
+  creative:
+    description: opens a inventory
+  crafting:
+    description: opens a inventory
+  methods:
+    description: opens a inventory
+  
+  
