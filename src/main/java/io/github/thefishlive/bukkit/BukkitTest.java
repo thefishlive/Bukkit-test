@@ -5,6 +5,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryView;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BukkitTest extends JavaPlugin {
@@ -46,8 +47,9 @@ public class BukkitTest extends JavaPlugin {
         }
         
         Inventory inv = getServer().createInventory(player, type);
-        player.openInventory(inv);
+        InventoryView view = player.openInventory(inv);
         sender.sendMessage("Opened " + type.name().toLowerCase() + " inventory");
+        sender.sendMessage("Actual open inventory " + view.getTitle());
         
         return true;       
     }

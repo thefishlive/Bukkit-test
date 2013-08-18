@@ -35,5 +35,7 @@ commands:
     description: opens a inventory
   methods:
     description: opens a inventory
+  horse:
+    description: opens a inventory
   
   
