@@ -1,5 +1,6 @@
 package io.github.thefishlive.bukkit;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -47,7 +48,13 @@ public class BukkitTest extends JavaPlugin {
         }
         
         Inventory inv = getServer().createInventory(player, type);
-        InventoryView view = player.openInventory(inv);
+        InventoryView view;
+        try {
+            view = player.openInventory(inv);
+        } catch (Exception ex) {
+            sender.sendMessage(ChatColor.RED + ex.getMessage());
+            return true;
+        }
         sender.sendMessage("Opened " + type.name().toLowerCase() + " inventory");
         sender.sendMessage("Actual open inventory " + view.getTitle());
         
