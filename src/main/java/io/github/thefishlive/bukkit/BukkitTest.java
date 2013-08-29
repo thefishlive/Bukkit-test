@@ -11,6 +11,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class BukkitTest extends JavaPlugin {
 
+    @Override
+    public void onEnable() {
+        getServer().getPluginManager().registerEvents(new InventoryListener(), this);
+    }
+
+    @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         
         Player player = (Player) sender;
